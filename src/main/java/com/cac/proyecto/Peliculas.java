@@ -1,13 +1,16 @@
 package com.cac.proyecto;
 
-public class Peliculas {
+import java.util.Date;
 
-private int idPelicula;
+public class Movies {
+
+    private int id_movie;
     private String nombre;
-    private String foto;
-    private String sinopsis;
+    private int año;
+    private String estrellas;
+    private String descripcion;
     private String genero;
-    private String clasificacion;
-    private Date fechaEstreno;
-    private int idDirector;
+    private String calificacion;
+    private Date fechaCreacion;
+    private int directores_id;// esta en duda por ser un FK en el DER
 }
