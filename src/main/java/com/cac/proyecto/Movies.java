@@ -4,7 +4,6 @@ import java.util.Date;
 
 public class Movies {
 
-    private int id_movie;
     private String nombre;
     private int año;
     private String estrellas;

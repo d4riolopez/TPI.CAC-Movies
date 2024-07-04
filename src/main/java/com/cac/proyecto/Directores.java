@@ -1,7 +1,6 @@
 package com.cac.proyecto;
 
 public class Directores {
-        private int id_Director;
         private String nombre;
         private String apellido;
         private int edad; 
