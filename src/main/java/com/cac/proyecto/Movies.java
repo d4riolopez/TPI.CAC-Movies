@@ -26,8 +26,8 @@ public class Movies {
         public void setNombre(String nom){this.nombre=nom;};
         public String getGenero(){return genero;};
         public void setGenero(String gen){this.genero=gen;};
-        public int getFechaCreacion(){return fechaCreacion;};
-        public void setEdad(int fCrea){this.fechaCreacion=fCrea;};
+        public Date getFechaCreacion(){return fechaCreacion;};
+        public void setEdad(Date fCrea){this.fechaCreacion=fCrea;};
         public String getSynopsis(){return synopsis;};
         public void setSynopsis(String syn){this.synopsis=syn;};    
         public String getCalificacion(){return calificacion;};
