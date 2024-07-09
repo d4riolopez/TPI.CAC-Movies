@@ -16,7 +16,7 @@
 <body>
   <header>
     <nav class="container_nav">
-      <a href="index.html">
+      <a href="index.jsp">
           <i class="fas fa-film" aria-hidden="true"></i>
           <span id="logo">CAC-Movies</span>
       </a>
@@ -25,10 +25,10 @@
               <a class="opcion" href="#ver_peliculas">Tendencias</a>
           </li>
           <li class="opciones_menu">
-              <a class="opcion" href="registro.html">Registrarse</a>
+              <a class="opcion" href="registro.jsp">Registrarse</a>
           </li>
           <li class="opciones_menu">
-              <a id="boton_negro" href="inicio_sesion.html">Iniciar Sesion</a>
+              <a id="boton_negro" href="inicio_sesion.jsp">Iniciar Sesion</a>
           </li>
       </ul>
   </nav>
@@ -136,7 +136,7 @@
         <li class="opciones_footer">Preguntas frecuentes</li>
         <li class="opciones_footer">Ayuda</li>
         <li class="opciones_footer">
-          <a id="boton_negro_footer" href="index.html">Administrador Peliculas</a>
+          <a id="boton_negro_footer" href="index.jsp">Administrador Peliculas</a>
         </li>
       </ul>
     </nav>

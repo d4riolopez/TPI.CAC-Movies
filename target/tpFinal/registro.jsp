@@ -14,7 +14,7 @@
 </head>
 <header>
     <nav class="container_nav_registro">
-        <a href="index.html">
+        <a href="index.jsp">
             <i class="fas fa-film" aria-hidden="true"></i>
             <span id="logo_registro">CAC-Movies</span>
         </a>
