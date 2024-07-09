@@ -36,14 +36,14 @@
         <div class="elementos_banner">
             <img src="imagenes/banner-bg.jpg" alt="tele de fondo">
         </div>
-        <h1 class="titulo_banner">Peliculas y series ilimitadas
+        <h1 class="titulo_banner">Películas y series ilimitadas
             en un solo lugar</h1>
         <h2 class="subtitulo_banner">Disfruta donde quieras.
             Cancela en cualquier momento.</h2>
         <a class="boton_registrarse" href="registro.html">Registrate</a>
     </main>
     <section class="buscar_peliculas" data-aos="zoom-in" data-aos-duration="1000">
-        <h1 class="subtitulo_peliculas">¿Que estas buscando para ver?</h2>
+        <h1 class="subtitulo_peliculas">¿Qué estas buscando para ver?</h2>
             <div class="buscador">
                 <input type="text" placeholder="Buscar..." id="barra">
                 <button type="submit" id="boton_busqueda">Buscar</button>
