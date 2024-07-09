@@ -14,7 +14,7 @@
 </head>
 <header>
     <nav class="container_nav_registro">
-        <a href="index.html">
+        <a href="index.jsp">
             <i class="fas fa-film" aria-hidden="true"></i>
             <span id="logo_registro">CAC-Movies</span>
         </a>
@@ -22,7 +22,7 @@
 </header>
 <body class="body_inicio">
     <section class="formulario_inicio" data-aos="zoom-in" data-aos-duration="1000" id="formRegis">
-        <form action="index.html" method="post">
+        <form action="index.jsp" method="post">
         <h1>Iniciar Sesion</h1>
         <input type="email" class="campos_inicio" id="campoEmail" name="mail" placeholder="Email">
         <input type="password" class="campos_inicio" id="campoContra" name="contra" placeholder="Contraseña">

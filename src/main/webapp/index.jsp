@@ -24,10 +24,10 @@
                     <a class="opcion" href="#ver_peliculas">Tendencias</a>
                 </li>
                 <li class="opciones_menu">
-                    <a class="opcion" href="registro.html">Registrarse</a>
+                    <a class="opcion" href="registro.jsp">Registrarse</a>
                 </li>
                 <li class="opciones_menu">
-                    <a id="boton_negro" href="inicio_sesion.html">Iniciar Sesion</a>
+                    <a id="boton_negro" href="inicio_sesion.jsp">Iniciar Sesion</a>
                 </li>
             </ul>
         </nav>
@@ -40,7 +40,7 @@
             en un solo lugar</h1>
         <h2 class="subtitulo_banner">Disfruta donde quieras.
             Cancela en cualquier momento.</h2>
-        <a class="boton_registrarse" href="registro.html">Registrate</a>
+        <a class="boton_registrarse" href="registro.jsp">Registrate</a>
     </main>
     <section class="buscar_peliculas" data-aos="zoom-in" data-aos-duration="1000">
         <h1 class="subtitulo_peliculas">¿Que estas buscando para ver?</h2>
@@ -57,7 +57,7 @@
         <hr>
     </section>
     <section class="aclamadas" data-aos="zoom-in" data-aos-duration="1000">
-        <h1 class="titulo_aclamadas">Las más aclamadas</h1>
+        <h1 class="titulo_aclamadas">Las mas aclamadas</h1>
         <div class="peliculas_aclamadas">
             <!--div class="peliculas_item">
                 <img src="imagenes/shawshank.jpg" alt="shawshank">
@@ -86,7 +86,7 @@
                 <li class="opciones_footer">Preguntas frecuentes</li>
                 <li class="opciones_footer">Ayuda</li>
                 <li class="opciones_footer">
-                    <a id="boton_negro_footer" href="index.html">Administrador Peliculas</a>
+                    <a id="boton_negro_footer" href="index.jsp">Administrador Peliculas</a>
                 </li>
             </ul>
         </nav>
