@@ -1,4 +1,4 @@
-package com.cac.proyecto;
+package controladores;
 
 public class PeliculaControlador {
 

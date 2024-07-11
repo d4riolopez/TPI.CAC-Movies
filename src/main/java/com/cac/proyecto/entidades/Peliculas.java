@@ -1,4 +1,4 @@
-package com.cac.proyecto;
+package entidades;
 
 import java.util.Date;
 

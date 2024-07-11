@@ -1,4 +1,4 @@
-package com.cac.proyecto;
+package entidades;
 
 public class Directores {
         private String nombre;
