@@ -1,12 +1,7 @@
 package entidades;
-import java.util.Objects;
+import java.util.Date;
 
 public class Directores {
-  /*`idDirectores` int(11) NOT NULL,
-  `nombre` varchar(35) DEFAULT NULL,
-  `apellido` varchar(35) DEFAULT NULL,
-  `f_nac` date DEFAULT NULL,
-  `nacionalidad` varchar(30) DEFAULT NULL*/
         private int idDirectores;
         private String nombre;
         private String apellido;
@@ -86,22 +81,6 @@ public class Directores {
   public Directores nacionalidad(String nacionalidad) {
     setNacionalidad(nacionalidad);
     return this;
-  }
-
-  @Override
-    public boolean equals(Object o) {
-        if (o == this)
-            return true;
-        if (!(o instanceof Directores)) {
-            return false;
-        }
-        Directores directores = (Directores) o;
-        return idDirectores == directores.idDirectores && Objects.equals(nombre, directores.nombre) && Objects.equals(apellido, directores.apellido) && Objects.equals(f_nac, directores.f_nac) && Objects.equals(nacionalidad, directores.nacionalidad);
-  }
-
-  @Override
-  public int hashCode() {
-    return Objects.hash(idDirectores, nombre, apellido, f_nac, nacionalidad);
   }
 
   @Override

@@ -3,37 +3,146 @@ package entidades;
 import java.util.Date;
 
 public class Peliculas {
-
+    private int idPelicula;
     private String nombre;
+    private String foto;
+    private String sinopsis;
     private String genero;
-    private Date fechaCreacion;
-    private String synopsis;
-    private String calificacion;
-    private String estrellas;
-    private int añoEstreno;
+    private String clasificacion;
+    private Date fechaEstreno;
+    private int director;
     
-    Peliculas(){};
-    Peliculas(String nom,String gen,Date fCrea,String syn,String cal,String estr,int aEst){
-        this.nombre=nom;
-        this.genero=gen;
-        this.fechaCreacion=fCrea;
-        this.synopsis=syn;
-        this.calificacion=cal;
-        this.estrellas=estr;
-        this.añoEstreno=aEst;
+
+    public Peliculas() {
     }
-        public String getNombre(){return nombre;};
-        public void setNombre(String nom){this.nombre=nom;};
-        public String getGenero(){return genero;};
-        public void setGenero(String gen){this.genero=gen;};
-        public Date getFechaCreacion(){return fechaCreacion;};
-        public void setEdad(Date fCrea){this.fechaCreacion=fCrea;};
-        public String getSynopsis(){return synopsis;};
-        public void setSynopsis(String syn){this.synopsis=syn;};    
-        public String getCalificacion(){return calificacion;};
-        public void setCalificaion(String cal){this.calificacion=cal;};
-        public String getEstrellas(){return estrellas;};
-        public void setEstrellas(String est){this.estrellas=est;};
-        public int getAñoEstreno(){return añoEstreno;};
-        public void setAñoEstreno(int aEst){this.añoEstreno=aEst;};    
+
+    public Peliculas(int idPelicula, String nombre, String foto, String sinopsis, String genero, String clasificacion, Date fechaEstreno, int director) {
+        this.idPelicula = idPelicula;
+        this.nombre = nombre;
+        this.foto = foto;
+        this.sinopsis = sinopsis;
+        this.genero = genero;
+        this.clasificacion = clasificacion;
+        this.fechaEstreno = fechaEstreno;
+        this.director = director;
+    }
+
+    public int getIdPelicula() {
+        return this.idPelicula;
+    }
+
+    public void setIdPelicula(int idPelicula) {
+        this.idPelicula = idPelicula;
+    }
+
+    public String getNombre() {
+        return this.nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getFoto() {
+        return this.foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
+    }
+
+    public String getSinopsis() {
+        return this.sinopsis;
+    }
+
+    public void setSinopsis(String sinopsis) {
+        this.sinopsis = sinopsis;
+    }
+
+    public String getGenero() {
+        return this.genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public String getClasificacion() {
+        return this.clasificacion;
+    }
+
+    public void setClasificacion(String clasificacion) {
+        this.clasificacion = clasificacion;
+    }
+
+    public Date getFechaEstreno() {
+        return this.fechaEstreno;
+    }
+
+    public void setFechaEstreno(Date fechaEstreno) {
+        this.fechaEstreno = fechaEstreno;
+    }
+
+    public int getDirector() {
+        return this.director;
+    }
+
+    public void setDirector(int director) {
+        this.director = director;
+    }
+
+    public Peliculas idPelicula(int idPelicula) {
+        setIdPelicula(idPelicula);
+        return this;
+    }
+
+    public Peliculas nombre(String nombre) {
+        setNombre(nombre);
+        return this;
+    }
+
+    public Peliculas foto(String foto) {
+        setFoto(foto);
+        return this;
+    }
+
+    public Peliculas sinopsis(String sinopsis) {
+        setSinopsis(sinopsis);
+        return this;
+    }
+
+    public Peliculas genero(String genero) {
+        setGenero(genero);
+        return this;
+    }
+
+    public Peliculas clasificacion(String clasificacion) {
+        setClasificacion(clasificacion);
+        return this;
+    }
+
+    public Peliculas fechaEstreno(Date fechaEstreno) {
+        setFechaEstreno(fechaEstreno);
+        return this;
+    }
+
+    public Peliculas director(int director) {
+        setDirector(director);
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+            " idPelicula='" + getIdPelicula() + "'" +
+            ", nombre='" + getNombre() + "'" +
+            ", foto='" + getFoto() + "'" +
+            ", sinopsis='" + getSinopsis() + "'" +
+            ", genero='" + getGenero() + "'" +
+            ", clasificacion='" + getClasificacion() + "'" +
+            ", fechaEstreno='" + getFechaEstreno() + "'" +
+            ", director='" + getDirector() + "'" +
+            "}";
+    }
+    
 }
