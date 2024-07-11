@@ -2,7 +2,7 @@ package com.cac.proyecto;
 
 import java.util.Date;
 
-public class Movies {
+public class Peliculas {
 
     private String nombre;
     private String genero;
@@ -12,8 +12,8 @@ public class Movies {
     private String estrellas;
     private int añoEstreno;
     
-    Movies(){};
-    Movies(String nom,String gen,Date fCrea,String syn,String cal,String estr,int aEst){
+    Peliculas(){};
+    Peliculas(String nom,String gen,Date fCrea,String syn,String cal,String estr,int aEst){
         this.nombre=nom;
         this.genero=gen;
         this.fechaCreacion=fCrea;

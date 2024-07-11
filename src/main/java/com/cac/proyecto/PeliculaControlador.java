@@ -1,5 +1,5 @@
 package com.cac.proyecto;
 
-public class Controladores {
+public class PeliculaControlador {
 
 }
