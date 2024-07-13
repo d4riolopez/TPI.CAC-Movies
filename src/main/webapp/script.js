@@ -104,3 +104,29 @@ f.addEventListener('submit', function(event){
     }else{
        alert("Bienvenido");
 }});
+
+//video 32 minuto 24:48 hasta 26:27
+function cargarPeliBaseDatos(){
+    //contexto/peliculasServlet
+    fetch().then(response => response.json())
+    .then(peliculas =>{
+        const tbody = document.querySelector('#idTabla tbody');
+        tbody.innerHTML = '';
+        peliculas.forEach(peli =>{
+            const fechaFromateada = new Date(peli.fechaEstreno).toISOString().split('T')[0];
+            tbody.innerHTML += `
+            <tr>
+            <td>${peli.nombre}</td>
+            <td>${peli.foto}</td>
+            <td>${peli.sinopsis}</td>
+            <td>${peli.genero}</td>
+            <td>${peli.clasificacion}</td>
+            <td>${fechaFromateada}</td>
+            <td>${peli.director}</td>
+
+             </tr>
+
+            `;
+        })
+    })
+}
