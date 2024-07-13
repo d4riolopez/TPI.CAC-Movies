@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-07-2024 a las 02:55:59
+-- Tiempo de generación: 13-07-2024 a las 22:03:30
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.0.28
 
@@ -24,20 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `directores`
---
-
-CREATE TABLE `directores` (
-  `idDirectores` int(11) NOT NULL,
-  `nombre` varchar(35) DEFAULT NULL,
-  `apellido` varchar(35) DEFAULT NULL,
-  `f_nac` date DEFAULT NULL,
-  `nacionalidad` varchar(30) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
--- --------------------------------------------------------
-
---
 -- Estructura de tabla para la tabla `peliculas`
 --
 
@@ -49,7 +35,7 @@ CREATE TABLE `peliculas` (
   `genero` varchar(20) DEFAULT NULL,
   `clasificacion` varchar(10) DEFAULT NULL,
   `fechaEstreno` date DEFAULT NULL,
-  `director` int(11) NOT NULL
+  `director` varchar(70) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
@@ -57,17 +43,10 @@ CREATE TABLE `peliculas` (
 --
 
 --
--- Indices de la tabla `directores`
---
-ALTER TABLE `directores`
-  ADD PRIMARY KEY (`idDirectores`);
-
---
 -- Indices de la tabla `peliculas`
 --
 ALTER TABLE `peliculas`
-  ADD PRIMARY KEY (`idPelicula`,`director`),
-  ADD KEY `fk_Peliculas_Directores_idx` (`director`);
+  ADD PRIMARY KEY (`idPelicula`) USING BTREE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
