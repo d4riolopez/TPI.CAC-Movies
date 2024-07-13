@@ -10,13 +10,13 @@ public class Peliculas {
     private String genero;
     private String clasificacion;
     private Date fechaEstreno;
-    private int director;
+    private String director;
     
 
     public Peliculas() {
     }
 
-    public Peliculas(int idPelicula, String nombre, String foto, String sinopsis, String genero, String clasificacion, Date fechaEstreno, int director) {
+    public Peliculas(int idPelicula, String nombre, String foto, String sinopsis, String genero, String clasificacion, Date fechaEstreno, String director) {
         this.idPelicula = idPelicula;
         this.nombre = nombre;
         this.foto = foto;
@@ -83,11 +83,11 @@ public class Peliculas {
         this.fechaEstreno = fechaEstreno;
     }
 
-    public int getDirector() {
+    public String getDirector() {
         return this.director;
     }
 
-    public void setDirector(int director) {
+    public void setDirector(String director) {
         this.director = director;
     }
 
@@ -126,7 +126,7 @@ public class Peliculas {
         return this;
     }
 
-    public Peliculas director(int director) {
+    public Peliculas director(String director) {
         setDirector(director);
         return this;
     }
