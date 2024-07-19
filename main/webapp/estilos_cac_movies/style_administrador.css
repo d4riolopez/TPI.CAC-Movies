@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* Header y footer */
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.container_nav{
+    background-color: #9f3647;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.container_nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+i{
+    padding-left: 3rem;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    font-size: 1.2rem;
+}
+.opcion{
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.opciones_menu{
+    margin-right: 3rem;
+}
+
+.opciones_menu #boton_negro, #boton_negro_footer{
+    background-color: #181419;
+    width: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+.opciones_menu #boton_negro:hover{
+    background-color: #9f3647;
+}
+
+footer{
+    background-color: #9f3647;
+    padding-top: 1rem;
+    height: 7rem;
+}
+
+.menu_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    list-style: none;
+    gap: 2rem;
+}
+
+.opciones_footer{
+    font-size: 1.2rem;
+    padding-top: 2rem;
+}
+
+/* Estilos generales */
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #181419;
+}
+
+h1, h2 {
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #d3d3d3;
+}
+
+/* Contenedor principal */
+.main-agregar-pelicula {
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Formulario */
+.form-agregar-pelicula {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.form-agregar-pelicula label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #ffcc00;
+}
+
+.input-agregar-pelicula, .textarea-agregar-pelicula, .form-control {
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    background-color: #333;
+    color: #f8f9fa;
+    transition: border-color 0.3s ease;
+}
+
+.input-agregar-pelicula:focus, .textarea-agregar-pelicula:focus, .form-control:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+.form-agregar-pelicula .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #9f3647;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-agregar-pelicula .btn:hover {
+    background-color: #c24b5e;
+    transform: scale(1.05);
+}
+
+/* Tabla */
+.table-peliculas {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table-peliculas th, .table-peliculas td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #444;
+}
+
+.table-peliculas th {
+    background-color: #9f3647;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+}
+
+.table-peliculas tbody tr:nth-child(even) {
+    background-color: #282828;
+}
+
+.table-peliculas tbody tr:hover {
+    background-color: #333;
+}
+
+.overflow-auto {
+    overflow-x: auto;
+    margin-top: 40px;
+}
