@@ -21,7 +21,7 @@
             </a>
             <ul class="menu">
                 <li class="opciones_menu">
-                    <a class="opcion" href="#ver_peliculas">Tendencias LOL</a>
+                    <a class="opcion" href="#ver_peliculas">Tendencias</a>
                 </li>
                 <li class="opciones_menu">
                     <a class="opcion" href="registro.jsp">Registrarse</a>
